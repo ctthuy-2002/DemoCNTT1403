@@ -5,47 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="6"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_weight="4"
-        android:orientation="horizontal">
-
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@color/pink"
+        android:layout_margin="20dp">
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_weight="2"
+        android:layout_height="match_parent"
         android:src="@drawable/anh1"
         android:layout_gravity="center"
-        android:paddingLeft="10dp"
-        android:background="@color/pink"
-        android:scaleType="fitStart" />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_weight="2"
-        android:src="@drawable/anh2"
-        android:layout_gravity="center"
-        android:paddingLeft="10dp"
-        android:background="@color/pink"
-        android:scaleType="matrix" />
-</LinearLayout>
+        android:paddingLeft="0dp"
+        android:background="@color/yellow"/>
 
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:layout_weight="4"
-    android:orientation="horizontal">
+
+    </androidx.cardview.widget.CardView>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="127dp"
+        android:layout_height="100dp"
         android:layout_weight="1"
         android:text="Flowers"
         android:textSize="50dp"
-        android:background="@color/pink"
-        android:gravity="center" />
-    </LinearLayout>
+        android:gravity="center"/>
+
 </LinearLayout>
